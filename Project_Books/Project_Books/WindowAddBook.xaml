@@ -1,0 +1,23 @@
+﻿<Window x:Class="Project_Books.WindowAddBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_Books"
+        mc:Ignorable="d"
+        Title="WindowAddBook" Height="500" Width="700"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="Gray">
+        <Label Content="Book Title" FontWeight="Bold"  HorizontalAlignment="Left" Margin="177,100,0,0" VerticalAlignment="Top" Width="80"/>
+        <ComboBox Name="cbxTitle" FontWeight="Bold" HorizontalAlignment="Left" Margin="432,97,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Price" FontWeight="Bold" HorizontalAlignment="Left" Margin="177,154,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBox Name="tbxPrice" FontWeight="Bold" HorizontalAlignment="Left" Margin="432,160,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120" Height="20"/>
+        <Button Name ="btnAdd" Content="Add" FontWeight="Bold" HorizontalAlignment="Left" Margin="177,374,0,0" VerticalAlignment="Top" Width="109" Click="btnAdd_Click"/>
+        <Button x:Name="btnCancel" FontWeight="Bold" Content="Cancel" HorizontalAlignment="Left" Margin="432,374,0,0" VerticalAlignment="Top" Width="120" Click="btnCancel_Click"/>
+        <Label Content="Date of delivery" FontWeight="Bold" HorizontalAlignment="Left" Margin="179,0,0,0" VerticalAlignment="Center"/>
+        <DatePicker Name="dpDate" FontWeight="Bold" HorizontalAlignment="Left" Margin="432,0,0,0" VerticalAlignment="Center" Width="120"/>
+        <Label Background="blue"  FontFamily="bold" FontSize="25" FontStyle="Oblique" Content="You can add a book here" HorizontalAlignment="Center" Margin="20" VerticalAlignment="Top" Width="300"/>
+        <Label Content="Genre" FontWeight="Bold" HorizontalAlignment="Left" Margin="179,293,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbxGenre" FontWeight="Bold" HorizontalAlignment="Left" Margin="432,297,0,0" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
