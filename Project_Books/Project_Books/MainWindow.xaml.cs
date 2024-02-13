@@ -39,7 +39,7 @@ namespace Project_Books
         {
             Random randomFactory = new Random();
 
-            ////create 5 expense objects
+            ////create 5 book objects
 
             Book b1 = new Book("Harry Potter", new DateTime(2018, 1, 15), 50m, "Adventure");
             Book b2 = GetRandomBook(randomFactory);
@@ -65,7 +65,7 @@ namespace Project_Books
             cbxFilter.ItemsSource = categories;
         }
 
-        //generate random expense
+        //generate random book
         private Book GetRandomBook(Random randomFactory)
         {
             Random rf = new Random();
