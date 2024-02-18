@@ -23,6 +23,7 @@
         <Button Name="btnLoad" Content="Load" HorizontalAlignment="Left" Margin="576,397,0,0" VerticalAlignment="Top" Width="99" Click="btnLoad_Click"/>
         <Button Name ="btnSave" Content="Save" HorizontalAlignment="Left" Margin="419,397,0,0" VerticalAlignment="Top" Width="98" Click="btnSave_Click"/>
         <Button Name="btnShowAll" Content="Show all" HorizontalAlignment="Left" Margin="576,359,0,0" VerticalAlignment="Top" Width="99" Click="btnShowAll_Click"/>
+        <Button Name="btnUpdate" Content="Update Total Price" Width="120" HorizontalAlignment="Left" Margin="268,371,0,0" VerticalAlignment="Top" Click="btnUpdate_Click"/>
 
     </Grid>
 </Window>
