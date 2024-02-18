@@ -238,10 +238,22 @@ namespace Project_Books
                 lbxBooks.ItemsSource = matchingBooks;
             }
         }      
+        
+ //update the total price
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            decimal updatedPrice = 0;
+
+            foreach (var item in lbxBooks.Items)
+            {
+                decimal price =((Book)item).Price;
+                updatedPrice += price;
+            }
+            tblkTotal.Text = string.Format("{0:C}", updatedPrice);
+
+        }
     }
 }
-
-
 
 
 
